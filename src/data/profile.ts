@@ -15,7 +15,6 @@ export const profile: Profile = {
     en: 'Uberlândia, Minas Gerais — Brazil',
   },
   email: 'otaviomazzutti@gmail.com',
-  // TODO: add both PDFs to public/resume/ with these exact names
   // The download button serves the résumé matching the selected site language.
   resume: {
     pt: '/resume/otavio-mazzutti-cv-pt.pdf',
