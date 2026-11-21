@@ -1,0 +1,139 @@
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Design tokens. Semantic colors are CSS variables so a single class
+ * (`.dark` on <html>) swaps the whole palette.
+ */
+:root {
+  --c-bg: #fafafa;
+  --c-surface: #ffffff;
+  --c-elevated: #f4f4f5;
+  --c-border: #e4e4e7;
+  --c-border-strong: #d4d4d8;
+  --c-fg: #0a0a0b;
+  --c-muted: #52525b;
+  --c-subtle: #71717a;
+  --c-accent: #059669;
+  --c-accent-soft: rgb(5 150 105 / 0.1);
+  --c-grid: rgb(10 10 11 / 0.06);
+  --c-spot: rgb(10 10 11 / 0.04);
+}
+
+.dark {
+  --c-bg: #0a0a0b;
+  --c-surface: #111113;
+  --c-elevated: #18181b;
+  --c-border: #232326;
+  --c-border-strong: #34343a;
+  --c-fg: #fafafa;
+  --c-muted: #a1a1aa;
+  --c-subtle: #71717a;
+  --c-accent: #34d399;
+  --c-accent-soft: rgb(52 211 153 / 0.1);
+  --c-grid: rgb(250 250 250 / 0.045);
+  --c-spot: rgb(250 250 250 / 0.05);
+}
+
+@theme {
+  --font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-elevated: var(--c-elevated);
+  --color-line: var(--c-border);
+  --color-line-strong: var(--c-border-strong);
+  --color-fg: var(--c-fg);
+  --color-muted: var(--c-muted);
+  --color-subtle: var(--c-subtle);
+  --color-accent: var(--c-accent);
+  --color-accent-soft: var(--c-accent-soft);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: 'ss01', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--c-accent);
+    color: var(--c-bg);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1200px] px-5 sm:px-8;
+  }
+
+  .label-mono {
+    @apply font-mono text-[11px] tracking-[0.14em] text-subtle uppercase;
+  }
+
+  /* Faint engineering grid used behind the hero, faded out at the edges */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, var(--c-grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--c-grid) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+  }
+
+  /* Cursor-follow highlight for cards; --x/--y are set from pointer events */
+  .spotlight {
+    background-image: radial-gradient(
+      420px circle at var(--x, 50%) var(--y, 50%),
+      var(--c-spot),
+      transparent 60%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>Otávio Mazzutti — Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Otávio Mazzutti — Full Stack Developer em Uberlândia, MG. Desenvolvimento web e mobile com React, TypeScript, Python, APIs REST e bancos de dados relacionais."
+    />
+    <meta name="author" content="Otávio Mazzutti" />
+    <meta name="keywords" content="Otávio Mazzutti, Full Stack Developer, Frontend, React, TypeScript, Python, UFU, Uberlândia" />
+    <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- TODO: replace https://YOUR-DOMAIN.vercel.app with the production URL after the first deploy -->
+    <link rel="canonical" href="https://YOUR-DOMAIN.vercel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Otávio Mazzutti" />
+    <meta property="og:title" content="Otávio Mazzutti — Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Otávio Mazzutti: web and mobile development, REST APIs and relational databases."
+    />
+    <meta property="og:url" content="https://YOUR-DOMAIN.vercel.app/" />
+    <!-- public/og-image.png is rendered from public/og-image.svg (1200×630) -->
+    <meta property="og:image" content="https://YOUR-DOMAIN.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Otávio Mazzutti — Full Stack Developer" />
+    <meta name="twitter:description" content="Web and mobile development, REST APIs and relational databases." />
+    <meta name="twitter:image" content="https://YOUR-DOMAIN.vercel.app/og-image.png" />
+
+    <link rel="preconnect" href="https://api.github.com" crossorigin />
+
+    <!-- Apply saved theme/language before first paint to avoid a flash -->
+    <script>
+      ;(function () {
+        try {
+          var root = document.documentElement
+          var theme = localStorage.getItem('om:theme')
+          if (theme === 'light') root.classList.remove('dark')
+          var lang = localStorage.getItem('om:locale')
+          if (lang === 'en') root.lang = 'en'
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding: 2rem; font-family: system-ui">
+        Otávio Mazzutti — Full Stack Developer. Enable JavaScript to view this portfolio, or visit
+        <a href="https://github.com/Otavio-Mazzutti">github.com/Otavio-Mazzutti</a>.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
