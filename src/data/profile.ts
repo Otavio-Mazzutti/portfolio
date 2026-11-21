@@ -15,8 +15,12 @@ export const profile: Profile = {
     en: 'Uberlândia, Minas Gerais — Brazil',
   },
   email: 'otaviomazzutti@gmail.com',
-  // TODO: add the PDF to public/resume/ with this exact name
-  resume: '/resume/otavio-mazzutti-cv.pdf',
+  // TODO: add both PDFs to public/resume/ with these exact names
+  // The download button serves the résumé matching the selected site language.
+  resume: {
+    pt: '/resume/otavio-mazzutti-cv-pt.pdf',
+    en: '/resume/otavio-mazzutti-cv-en.pdf',
+  },
   // TODO: import your photo, e.g. `import photo from '../assets/photo.jpg'`, and set `photo: photo`
   photo: null,
   availability: {

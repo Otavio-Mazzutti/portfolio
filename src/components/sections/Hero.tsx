@@ -103,7 +103,7 @@ export function Hero() {
               {t.hero.viewProjects}
               <ArrowRight size={16} aria-hidden="true" className="transition-transform group-hover:translate-x-0.5" />
             </ButtonLink>
-            <ButtonLink href={profile.resume} download variant="secondary">
+            <ButtonLink href={l(profile.resume)} download variant="secondary">
               <Download size={16} aria-hidden="true" className="transition-transform group-hover:translate-y-0.5" />
               {t.hero.downloadCv}
             </ButtonLink>

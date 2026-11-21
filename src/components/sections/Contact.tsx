@@ -13,7 +13,7 @@ const linkRow =
   'group flex items-center justify-between gap-4 border-b border-line py-5 text-fg transition-colors last:border-b-0 hover:text-accent'
 
 export function Contact() {
-  const { t } = useTranslation()
+  const { t, l } = useTranslation()
   const { status, copy } = useCopyToClipboard()
 
   const copyLabel = status === 'copied' ? t.contact.copied : status === 'error' ? t.contact.copyFailed : t.contact.copy
@@ -96,7 +96,7 @@ export function Contact() {
                 </li>
               ))}
               <li>
-                <a href={profile.resume} download className={linkRow}>
+                <a href={l(profile.resume)} download className={linkRow}>
                   <span className="flex items-center gap-3 text-lg font-medium tracking-tight">
                     <Download size={18} aria-hidden="true" />
                     {t.contact.resume}

@@ -86,7 +86,7 @@ grep -rn "TODO" src index.html
 | Name, role, bio, email, location, goals | `src/data/profile.ts`                                      |
 | LinkedIn URL                            | `profile.linkedin` in `src/data/profile.ts`                |
 | Profile photo                           | Import the image in `profile.ts` and set `profile.photo`   |
-| Résumé PDF                              | Add `public/resume/otavio-mazzutti-cv.pdf`                 |
+| Résumé PDFs (one per language)          | Add `public/resume/otavio-mazzutti-cv-pt.pdf` and `otavio-mazzutti-cv-en.pdf`. The download buttons serve the one matching the site language (`profile.resume`) |
 | Graduation period                       | `profile.education.period`                                 |
 | Experience and dates                    | `src/data/experience.ts` (`'YYYY-MM'`, `'present'` or `null`) |
 | Skills and icons                        | `src/data/skills.ts`                                       |

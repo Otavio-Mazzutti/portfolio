@@ -21,8 +21,8 @@ export interface Profile {
   role: string
   location: LocalizedString
   email: string
-  /** Path to a file in /public, e.g. "/resume/cv.pdf". */
-  resume: string
+  /** Résumé per locale: paths to files in /public, e.g. "/resume/cv-en.pdf". */
+  resume: LocalizedString
   /** Imported image URL, or null to render the placeholder frame. */
   photo: string | null
   availability: {
