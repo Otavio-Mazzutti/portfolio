@@ -1,5 +1,6 @@
 import { FaLinkedinIn } from 'react-icons/fa6'
 import { SiGithub } from 'react-icons/si'
+import photo from '../assets/photo.png'
 import type { Profile, SocialLink } from '../types'
 
 /**
@@ -20,8 +21,7 @@ export const profile: Profile = {
     pt: '/resume/otavio-mazzutti-cv-pt.pdf',
     en: '/resume/otavio-mazzutti-cv-en.pdf',
   },
-  // TODO: import your photo, e.g. `import photo from '../assets/photo.jpg'`, and set `photo: photo`
-  photo: null,
+  photo,
   availability: {
     open: true,
     label: {
@@ -44,8 +44,7 @@ export const profile: Profile = {
     },
     institution: 'Universidade Federal de Uberlândia',
     institutionShort: 'UFU',
-    // TODO: fill in, e.g. '2022 — 2026'
-    period: '20XX — 20XX',
+    period: '2023 - 2027',
   },
   interests: [
     { pt: 'Desenvolvimento Full Stack', en: 'Full Stack Development' },
