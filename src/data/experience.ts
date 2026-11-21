@@ -12,9 +12,8 @@ export const experiences: Experience[] = [
       pt: 'Estagiário em Desenvolvimento de Software',
       en: 'Software Development Intern',
     },
-    // TODO: set real dates, e.g. start: '2025-03', end: 'present'
-    start: null,
-    end: null,
+    start: '2025-03',
+    end: '2025-07',
     highlights: [
       { pt: 'Desenvolvimento web com React e TypeScript.', en: 'Web development with React and TypeScript.' },
       { pt: 'Integração com APIs REST.', en: 'Integration with REST APIs.' },
@@ -30,9 +29,8 @@ export const experiences: Experience[] = [
       pt: 'Estagiário em Desenvolvimento Mobile & Web',
       en: 'Mobile & Web Development Intern',
     },
-    // TODO: set real dates
-    start: null,
-    end: null,
+    start: '2025-08',
+    end: '2026-06',
     highlights: [
       {
         pt: 'Participação na migração de uma aplicação para Kotlin Multiplatform.',
