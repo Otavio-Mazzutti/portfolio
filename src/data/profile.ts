@@ -63,8 +63,7 @@ export const profile: Profile = {
   },
   // TODO: replace with your LinkedIn profile URL
   linkedin: 'https://www.linkedin.com/in/YOUR-LINKEDIN',
-  // TODO: replace with the production URL after the first Vercel deploy
-  siteUrl: 'https://YOUR-DOMAIN.vercel.app',
+  siteUrl: 'https://otaviomazzutti.com',
 }
 
 export const socialLinks: SocialLink[] = [
