@@ -61,8 +61,7 @@ export const profile: Profile = {
     url: 'https://github.com/Otavio-Mazzutti',
     highlightedRepos: ['FazendaInteligenteSD', 'calculadora-financeira', 'PrototipoDataLake'],
   },
-  // TODO: replace with your LinkedIn profile URL
-  linkedin: 'https://www.linkedin.com/in/YOUR-LINKEDIN',
+  linkedin: 'https://www.linkedin.com/in/otavio-mazzutti-153734340/',
   siteUrl: 'https://otaviomazzutti.com',
 }
 

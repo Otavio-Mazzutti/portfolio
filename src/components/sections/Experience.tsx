@@ -35,7 +35,7 @@ export function Experience() {
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
                   <h3 className="text-2xl font-semibold tracking-[-0.03em]">{job.company}</h3>
                   <p className="font-mono text-[12px] text-subtle">
-                    {range ?? <span title="TODO: src/data/experience.ts">{t.experience.datesTbd}</span>}
+                    {range ?? <span title="src/data/experience.ts">{t.experience.datesTbd}</span>}
                   </p>
                 </div>
                 <p className="mt-1 text-muted">{l(job.role)}</p>
