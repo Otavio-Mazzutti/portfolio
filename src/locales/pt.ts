@@ -21,7 +21,7 @@ export const pt = {
   nav: {
     about: 'Sobre',
     experience: 'Experiência',
-    stack: 'Stack',
+    stack: 'Tecnologias',
     projects: 'Projetos',
     github: 'GitHub',
     contact: 'Contato',
